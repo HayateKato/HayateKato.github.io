@@ -1,5 +1,5 @@
 <gitの特徴>
-・分散仮型のバージョン管理システム
+・分散管理型のバージョン管理システム
 ・元々はオープンソースソフトウェア管理のためのソフトウェアであった
 ・変更履歴が残る
 ・変更した箇所に戻ることができる
@@ -23,10 +23,13 @@
  -共同作業・並行作業が可能
 
 <gitのコマンド>
+・git config --global user.name yourname@example.com
+ -ホスト（OS）全体のgitの設定
 ・git symbolic-ref HEAD refs/heads/main
  -HEAD（ローカルレポジトリでの最新の状態）をmainと設定する
 ・git branch --set-upstream-to origin/main
- -リモートブランチと紐付ける設定
+ -リモートブランチ（origin/main）と紐付ける設定
+ -originはリモートでのデフォルトのサーバー
 ・git stash
  -一時退避
 ・git diff origin -- index.html
@@ -35,12 +38,10 @@
  -originからプル（同期）
 ・git stash pop
  -一時退避したものに変更を加える
-
 ・git merge --abort
- -mainブランチを，マージを試行する前の状態に復元
+ -mainブランチをマージを試行する前の状態に復元
 ・git reset --hard
  -マージを開始する前の状態に戻す
-
 ・git init
  -gitの初期化・設定開始
 ・git status
@@ -51,23 +52,18 @@
  -ログを表示（-- onlineでコミットメッセージの1行のみの一覧表示）
 ・git diff
  -ファイルの差分を表示
-
 ・git add
  -ステージングエリアに追加
 ・git commit
  -コミットの実行
-
 ・git commit --amend --no-edit
  -コミットの修正
-・git checkout
- -削除されたファイルの復旧や過去コミットの復元
 ・git reset
  -コミットのリセット
 ・git revert
  -「コミットの変更を打ち消す」コミット
 ・git rm
  -ファイルとindex情報の削除
-
 ・git clone
  -レポジトリをコピー
 ・git pull
@@ -78,7 +74,6 @@
  -プルリクエスト（変更依頼）
 ・git remote
  -リモートレポジトリの設定
-
 ・git branch
  -ブランチの作成
 ・git checkout
