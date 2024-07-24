@@ -4,14 +4,14 @@ title: "git memo"
 permalink: /docs/git-memo
 ---
 
-<gitの特徴>
+# gitの特徴
 ・分散管理型のバージョン管理システム
 ・元々はオープンソースソフトウェア管理のためのソフトウェアであった
 ・変更履歴が残る
 ・変更した箇所に戻ることができる
 ・他人と共同編集できる
 
-<gitが持つ機能>
+# gitが持つ機能
 [コミット]
 ・ファイルの作成，変更，削除の記録を行う
  -いつ・誰が・何を・どのような
@@ -28,7 +28,7 @@ permalink: /docs/git-memo
 ・作業を枝分かれさせることができる
  -共同作業・並行作業が可能
 
-<gitのコマンド>
+# gitのコマンド
 ・git config --global user.name yourname@example.com
  -ホスト（OS）全体のgitの設定
 ・git symbolic-ref HEAD refs/heads/main
